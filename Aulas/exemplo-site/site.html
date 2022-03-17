@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+
+    <input type="number" name="txtVELOCIDADE" id="txtVELOCIDADE"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    
+    <div id="res" style="margin-top: 50px;">
+    </div>
+
+    <script>
+        
+        function calcular(){
+            var cx_txtVELOCIDADE = document.getElementById('txtVELOCIDADE')
+            var res = document.querySelector('div#res')
+            var cVELOCIDADE = Number(cx_txtVELOCIDADE.value)
+            
+            res.innerHTML = `Velocidade registrada: <strong>${cVELOCIDADE} km/h</strong>`
+            
+            if(cVELOCIDADE > 60){
+                res.innerHTML += `<p>MULTADO!</p>`
+            }else{
+                res.innerHTML += `<p>Dirija sempre com segurança!</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>

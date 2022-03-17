@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> Para inserir favicon no site-->
+    <title>Código JavaScript</title>
+    <style>
+        body { 
+
+            background-color:rgb(36, 31, 31);
+            color: rgb(255, 255, 255);
+            font: normal 20pt Arial; /* comentário em CSS*/
+        }
+    </style>
+</head>
+<body>
+    <h1> Hello, world! </h1> 
+    <p>Aqui vai o parágrafo</p> <!-- Comentário em HTML -->
+    <!-- <img src="2-bandeira-do-brasil-200.jpg" alt="Bandeira do Brasil"> -->
+    <script>
+        // converter em string ---> String(n) ou n.toString()
+        window.alert('Minha primeira mensagem!') // comentário em JavaScript
+        window.confirm('Está gostando de JS?')   /* JavaScript tbm reconhece esse*/
+        var name = window.prompt('Qual seu nome?') // sempre retorna uma String
+        window.alert("Olá, prazer em te conhecer, " + name + "!")
+        var numero1 = Number.parseInt(window.prompt("Digite um número:")) // Pode ser Number.parseFloat(n)
+        var numero2 = Number(window.prompt("Digite outro número:"))
+        var result = numero1 + numero2
+        window.alert("Resultado da soma: "+ numero1 + " + " + numero2 + " = " + result)
+        alert(`Resultado da soma: ${numero1} + ${numero2} = ${result}`)
+
+    </script>
+</body>
+
+
+</html>
